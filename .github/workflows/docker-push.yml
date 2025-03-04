@@ -23,6 +23,6 @@ jobs:
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/salary-prediction:latest .
 
-      - name: Push the Docker Image
+      - name: Push Docker Image
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/salary-prediction:latest
